@@ -13,6 +13,7 @@ function MyEditor(props: Props) {
           value={props.code}
           language="handlebars"
           defaultValue="Please enter JS code."
+          theme="vs-dark"
           onChange={(newvalue:string, evn) => props.onChange(newvalue)}
           // padding={15}
           // style={{
