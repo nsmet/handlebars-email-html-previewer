@@ -6,6 +6,7 @@ import 'react-dropdown/style.css';
 interface Props {
     code: string;
     testData: string;
+    onParse: (html: string) => void;
 }
 function HtmlPreviewer(props: Props) {
     const [_parsedHtml, _setParsedHtml] = useState(props.code);
@@ -16,6 +17,7 @@ function HtmlPreviewer(props: Props) {
             const parsedHtml = handlebarsTemplate(JSON.parse(props.testData));
 
             _setParsedHtml(parsedHtml);
+            props.onParse(parsedHtml);
         } catch (e) {
             
         }

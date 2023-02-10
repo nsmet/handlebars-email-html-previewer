@@ -30,10 +30,10 @@ function TestDataEditor(props: Props) {
     
 
     return (
-        <div className={` w-screen h-screen flex items-center justify-center absolute bottom-0 top-0 ${!props.visible && 'invisible'}`}>
+        <div className={`w-screen h-screen flex items-center justify-center absolute bottom-0 top-0 ${!props.visible && 'invisible'}`}>
             <div id="slideover-container" className={`w-full h-full fixed inset-0 ${!props.visible && 'invisible'}`}>
                 <div onClick={ () => props.onHide()} id="slideover-bg" className={`w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 ${!props.visible ? 'opacity-0' : 'opacity-50'}`}></div>
-                <div className={`w-1/2 h-full absolute right-0 duration-300 ease-out transition-all ${!props.visible && 'translate-x-full'}`}>
+                <div className={`w-2/6	 h-full absolute right-0 duration-300 ease-out transition-all ${!props.visible && 'translate-x-full'}`}>
                     <div className="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </div>
@@ -54,7 +54,7 @@ function TestDataEditor(props: Props) {
                             }}
                         />
                         {!_isValid && 
-                            <p className="text-amber-500">Invalid JSON</p>
+                            <p className="text-amber-500 ml-4">Invalid JSON</p>
                         }
                       
                     </div>
