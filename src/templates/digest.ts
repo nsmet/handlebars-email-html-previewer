@@ -60,6 +60,13 @@ export default `<!doctype html>
         width: 100% !important;
         max-width: 100%;
       }
+      .var-container {
+        background-color:red;
+      }
+      .mj-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
     }
   </style>
   <style type="text/css">
@@ -125,8 +132,15 @@ export default `<!doctype html>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:24px;text-align:left;color:#434245;">
+                        <h1 style="margin: 0; font-size: 24px; line-height: normal; font-weight: bold;"> Hi {{name}}, <br> here is your weekly digest </h1>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <h1 style="margin: 0; font-size: 24px; line-height: normal; font-weight: bold;"> Are You Trying To Log In<br> From a New Device? </h1>
+                        <p style="margin: 0;"> Compassion movements big data and scalable strengthening infrastructure social capital contextualize. Blended value challenges and opportunities dynamic parse. </p>
                       </div>
                     </td>
                   </tr>
@@ -159,7 +173,184 @@ export default `<!doctype html>
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;text-align:center;">
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tr>
+                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:550px;">
+                              <img height="auto" src={{headlineImg}} style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;" width="550">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:24px;text-align:left;color:#434245;">
+                        <p class="date" style="margin: 0;">{{headlineDate}}</p>
+                        <h2 style="margin: 0; font-size: 24px; line-height: normal; font-weight: bold;">{{headlineTitle}}</h2>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
+                        <p style="margin: 0;">{{headlineParagraph}}</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                        <tr>
+                          <td align="center" bgcolor="#2e58ff" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#2e58ff;" valign="middle">
+                            <a href={{headlineUrl}} style="display: inline-block; background: #2e58ff; color: white; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 24px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 30px;" target="_blank">
+                              <strong>Read more</strong>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:300px;"
+            >
+          <![endif]-->
+              
+
+          {{#each imageGallery}}
+          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+            <tr>
+              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                  <tbody>
+                    <tr>
+                      <td style="width:250px;" class="mj-full-width-mobile">
+                        <img alt="image description" height="auto" src={{this.imgUrl}} style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;" width="250">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:24px;text-align:left;color:#434245;">
+                  <p class="date" style="margin: 0;">Janurary 12, 2020</p>
+                  <h2 style="margin: 0; font-size: 24px; line-height: normal; font-weight: bold;">{{this.title}}</h2>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
+                  <p style="margin: 0;">{{this.paragraph}}</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                  <tr>
+                    <td align="center" bgcolor="#2e58ff" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#2e58ff;" valign="middle">
+                      <a href={{this.url}} style="display: inline-block; background: #2e58ff; color: white; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 24px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 30px;" target="_blank">
+                        <strong>Read more</strong>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+          {{/each}}
+          
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:300px;"
+            >
+          <![endif]-->
+              
+              <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    <div style="background:#f4f4f4;background-color:#f4f4f4;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f4f4f4;background-color:#f4f4f4;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
               <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -173,16 +364,30 @@ export default `<!doctype html>
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <p style="margin: 0;">Hi, {{name}}</p>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:24px;text-align:left;color:#434245;">
+                        <p class="date" style="margin: 0;">{{this.date}}</p>
+                        <h2 style="margin: 0; font-size: 24px; line-height: normal; font-weight: bold;">Social enterprise; inspiring support, shared value fairness. </h2>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <p style="margin: 0;">We noticed your [YourCompany] account was logged into from a new device. If this was you, you can safely disregard this email.</p>
+                        <p style="margin: 0;">B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but. </p>
                       </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                        <tr>
+                          <td align="center" bgcolor="#2e58ff" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#2e58ff;" valign="middle">
+                            <a href="https:www.amazon.com/" style="display: inline-block; background: #2e58ff; color: white; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 24px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 30px;" target="_blank">
+                              <strong>Read more</strong>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -229,80 +434,8 @@ export default `<!doctype html>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <p style="margin: 0;"><strong style="font-size: 14px; color: #999; line-height: 18px">When:</strong><br> {{when}}</p>
+                        <p style="margin: 0;">We hope you find these resources helpful, and we’ll be in touch again next week with more updates. </p>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <p style="margin: 0;"><strong style="font-size: 14px; color: #999; line-height: 18px">Where:</strong><br> {{where}}</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
-                        <p style="margin: 0;"><strong style="font-size: 14px; color: #999; line-height: 18px">Device:</strong><br> {{device}}</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                        <tr>
-                          <td align="center" bgcolor="#2e58ff" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#2e58ff;" valign="middle">
-                            <a href="https://google.com" style="display: inline-block; background: #2e58ff; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 30px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 30px;" target="_blank">
-                              <strong>It wasn't you?</strong> Review your Account </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <!--[if mso | IE]>
-            </td>
-          
-        </tr>
-      
-                  </table>
-                <![endif]-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!--[if mso | IE]>
-          </td>
-        </tr>
-      </table>
-      
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
-      >
-        <tr>
-          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-        <tbody>
-          <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:0px;text-align:center;">
-              <!--[if mso | IE]>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                
-        <tr>
-      
-            <td
-               class="" style="vertical-align:top;width:600px;"
-            >
-          <![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                  <tr>
-                    <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">If you need any help, don’t hesitate to reach out to us at <a href="#" style="color: #2e58ff; text-decoration: none;">hello@yourcompany.com</a>!</div>
                     </td>
                   </tr>
                   <tr>
@@ -443,17 +576,17 @@ export default `<!doctype html>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:24px;text-align:left;color:#999999;">Have questions or need help? Email us at <a href="#" style="color: #2e58ff; text-decoration: none;"> info@yourcompany.com </a></div>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:24px;text-align:left;color:#ACA9BB;">Have questions or need help? Email us at <a href="#" style="color: #2e58ff; text-decoration: none;"> info@yourcompany.com </a></div>
                     </td>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">123 Medalling Jr., Suite 100, Parrot Park, CA 12345<br> © 2020 [YourCompany] Inc.</div>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#ACA9BB;">123 Medalling Jr., Suite 100, Parrot Park, CA 12345<br> © 2020 [YourCompany] Inc.</div>
                     </td>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:24px;text-align:left;color:#999999;">Update your <a href="https://google.com" style="color: #2e58ff; text-decoration: none;">email preferences</a> to choose the types of emails you receive, or you can <a href="https://google.com" style="color: #2e58ff; text-decoration: none;"> unsubscribe </a>from all future emails.</div>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:24px;text-align:left;color:#ACA9BB;">Update your <a href="https://google.com" style="color: #2e58ff; text-decoration: none;">email preferences</a> to choose the types of emails you receive, or you can <a href="https://google.com" style="color: #2e58ff; text-decoration: none;"> unsubscribe </a>from all future emails.</div>
                     </td>
                   </tr>
                 </table>
@@ -534,5 +667,4 @@ export default `<!doctype html>
   </div>
 </body>
 
-</html>
-`
+</html>`
