@@ -1,40 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 
 interface Props {
     visible: boolean;
     json: string;
+    template: any;
     onHide: () => void;
     onChange: (code: string) => void;
 }
 
 function TestDataEditor(props: Props) {
-    const [_localCode, _setLocalCode] = useState(`{
-        "name": "John Doe",
-        "headlineImg":"https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "headlineTitle":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-        "headlineDate":"January 13, 2020",
-        "headlineParagraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but.",
-        "headlineUrl":"https://www.twitter.com",
-        "imageGallery": [
-          {
-            "imgUrl": "https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "date":"January 13, 2020",
-            "title":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-            "url":"https://www.twitter.com",
-            "paragraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but."
-          },
-          {
-            "imgUrl": "https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "date":"January 13, 2020",
-            "title":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-            "url":"https://www.twitter.com",
-            "paragraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but."
-          }
-        ]
-      }`);
+    const [_localCode, _setLocalCode] = useState(props.json);
     const [_isValid, _setIsValid] = useState(true);
 
+    useEffect(() => {
+        _setLocalCode(JSON.stringify(props.template.testData, null, "\t"))
+    }, [props.template])
     
     const _onChange = (value: string) => { 
         try {
@@ -46,6 +27,7 @@ function TestDataEditor(props: Props) {
             _setIsValid(false);
         }
     }
+    
 
     return (
         <div className={` w-screen h-screen flex items-center justify-center absolute bottom-0 top-0 ${!props.visible && 'invisible'}`}>

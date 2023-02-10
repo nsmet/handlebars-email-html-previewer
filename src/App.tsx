@@ -17,38 +17,18 @@ const dropdownOptions = Templates.map((item) => {
 function App() {
   const [_chosenTemplate, _setChosenTemplate] = useState(Templates[0]);
   const [_code, _setCode] = useState(Templates[0].html);
-  const [_testData, _setTestData] = useState(`{
-    "name": "John Doe",
-    "headlineImg":"https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "headlineTitle":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-    "headlineDate":"January 13, 2020",
-    "headlineParagraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but.",
-    "headlineUrl":"https://www.twitter.com",
-    "imageGallery": [
-      {
-        "imgUrl": "https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "date":"January 13, 2020",
-        "title":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-        "url":"https://www.twitter.com",
-        "paragraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but."
-      },
-      {
-        "imgUrl": "https://images.unsplash.com/photo-1496047160831-9aa3ac415852?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "date":"January 13, 2020",
-        "title":"Peaceful, a, social enterprise; inspiring support, shared value fairness.",
-        "url":"https://www.twitter.com",
-        "paragraph":"B-corp issue outcomes, blended value do-gooder social intrapreneurship catalyze. Outcomes inclusive social entrepreneur, save the world B-corp or venture philanthropy a but."
-      }
-    ]
-  }`);
+  const [_testData, _setTestData] = useState(JSON.stringify(Templates[0].testData, null, "\t"));
   const [_testDataEditorVisible, _setTestDataEditorVisible] = useState(false);
 
   useEffect(() => {
     _setCode(_chosenTemplate.html);
   }, [_chosenTemplate]);
-
+  
   const _onTemplateChange = (option: Option) => {
-    _setChosenTemplate(Templates.find((item) => item.name === option.label) as any);
+    const _template = Templates.find((item) => item.name === option.label) as any;
+
+    _setTestData(JSON.stringify(_template.testData, null, "\t"));
+    _setChosenTemplate(_template);
   }
 
   const _onCodeChange = (code: string) => {
@@ -79,7 +59,7 @@ function App() {
           </div>
           <HtmlPreviewer code={_code} testData={_testData} />
           
-          <TestDataEditor json={_testData} onChange={_setTestData} onHide={() => _setTestDataEditorVisible(!_testDataEditorVisible)} visible={_testDataEditorVisible}/>
+          <TestDataEditor template={_chosenTemplate} json={_testData} onChange={_setTestData} onHide={() => _setTestDataEditorVisible(!_testDataEditorVisible)} visible={_testDataEditorVisible}/>
         </div>
       </div>
     </div>

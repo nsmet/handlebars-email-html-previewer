@@ -1,16 +1,19 @@
-import Template1 from './template-1';
+import newDevice from './new-device';
 import WelcomeEmail from './welcome-email';
 import Digest from './digest';
 
 export default [
     {
         name: 'Digest',
-        html: Digest
+        html: Digest.html,
+        testData: Digest.testData
     },{
         name: 'New device',
-        html: Template1
+        html: newDevice.html,
+        testData: newDevice.testData
     },{
         name: 'Welcome Email',
-        html: WelcomeEmail
+        html: WelcomeEmail.html,
+        testData: WelcomeEmail.testData
     },
 ]
