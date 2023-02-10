@@ -122,7 +122,7 @@ const html =  `<!doctype html>
                         <tbody>
                           <tr>
                             <td style="width:50px;">
-                              <img alt="image description" height="auto" src="../../../images/logo-circle.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;" width="50">
+                              {{!-- <img alt="image description" height="auto" src="../../../images/logo-circle.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;" width="50"> --}}
                             </td>
                           </tr>
                         </tbody>
@@ -333,7 +333,7 @@ const html =  `<!doctype html>
                               <tr>
                                 <td style="font-size:0;height:18px;vertical-align:middle;width:18px;">
                                   <a href="#" target="_blank" style="color: #2e58ff; text-decoration: none;">
-                                    <img alt="twitter-logo" height="18" src="../../../images/social/black/twitter-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18">
+                                    {{!-- <img alt="twitter-logo" height="18" src="../../../images/social/black/twitter-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18"> --}}
                                   </a>
                                 </td>
                               </tr>
@@ -353,7 +353,7 @@ const html =  `<!doctype html>
                               <tr>
                                 <td style="font-size:0;height:18px;vertical-align:middle;width:18px;">
                                   <a href="#" target="_blank" style="color: #2e58ff; text-decoration: none;">
-                                    <img alt="facebook-logo" height="18" src="../../../images/social/black/facebook-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18">
+                                    {{!-- <img alt="facebook-logo" height="18" src="../../../images/social/black/facebook-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18"> --}}
                                   </a>
                                 </td>
                               </tr>
@@ -373,7 +373,7 @@ const html =  `<!doctype html>
                               <tr>
                                 <td style="font-size:0;height:18px;vertical-align:middle;width:18px;">
                                   <a href="#" target="_blank" style="color: #2e58ff; text-decoration: none;">
-                                    <img alt="instagram-logo" height="18" src="../../../images/social/black/instagram-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18">
+                                    {{!-- <img alt="instagram-logo" height="18" src="../../../images/social/black/instagram-logo-transparent-black.png" style="border-radius:3px;display:block;" width="18"> --}}
                                   </a>
                                 </td>
                               </tr>
@@ -541,6 +541,7 @@ const html =  `<!doctype html>
 </body>
 
 </html>
+
 `
 
 
