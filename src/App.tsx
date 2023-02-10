@@ -18,7 +18,7 @@ const dropdownOptions = Templates.map((item) => {
 function App() {
   const [_chosenTemplate, _setChosenTemplate] = useState(Templates[0]);
   const [_code, _setCode] = useState(Templates[0].html);
-  const [_testData, _setTestData] = useState('{}');
+  const [_testData, _setTestData] = useState(JSON.stringify(Templates[0].testData, null, "\t"));
   const [_testDataEditorVisible, _setTestDataEditorVisible] = useState(false);
   const [_fullyParsedHtml, _setFullyParsedHtml] = useState('');
   const [_mailtrapVisible, _setMailtrapVisible] = useState(false);
@@ -26,9 +26,12 @@ function App() {
   useEffect(() => {
     _setCode(_chosenTemplate.html);
   }, [_chosenTemplate]);
-
+  
   const _onTemplateChange = (option: Option) => {
-    _setChosenTemplate(Templates.find((item) => item.name === option.label) as any);
+    const _template = Templates.find((item) => item.name === option.label) as any;
+
+    _setTestData(JSON.stringify(_template.testData, null, "\t"));
+    _setChosenTemplate(_template);
   }
 
   const _onCodeChange = (code?: string) => {
@@ -86,7 +89,7 @@ function App() {
           </div>
           <HtmlPreviewer code={_code} testData={_testData} onParse={_setFullyParsedHtml} />
           
-          <TestDataEditor json={_testData} onChange={_setTestData} onHide={() => _setTestDataEditorVisible(!_testDataEditorVisible)} visible={_testDataEditorVisible}/>
+          <TestDataEditor template={_chosenTemplate} json={_testData} onChange={_setTestData} onHide={() => _setTestDataEditorVisible(!_testDataEditorVisible)} visible={_testDataEditorVisible}/>
         </div>
       </div>
   

@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 
 interface Props {
     visible: boolean;
     json: string;
+    template: any;
     onHide: () => void;
     onChange: (code: string) => void;
 }
 
 function TestDataEditor(props: Props) {
-    const [_localCode, _setLocalCode] = useState('');
-    const [_isValid, _setIsValid] = useState(false);
+    const [_localCode, _setLocalCode] = useState(props.json);
+    const [_isValid, _setIsValid] = useState(true);
 
+    useEffect(() => {
+        _setLocalCode(JSON.stringify(props.template.testData, null, "\t"))
+    }, [props.template])
     
     const _onChange = (value: string) => { 
         try {
@@ -23,6 +27,7 @@ function TestDataEditor(props: Props) {
             _setIsValid(false);
         }
     }
+    
 
     return (
         <div className={`w-screen h-screen flex items-center justify-center absolute bottom-0 top-0 ${!props.visible && 'invisible'}`}>
