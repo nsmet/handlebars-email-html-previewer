@@ -1,6 +1,7 @@
 import newDevice from './new-device';
 import WelcomeEmail from './welcome-email';
 import Digest from './digest';
+import EmptyTemplate from './empty-template';
 
 export default [
     {
@@ -16,4 +17,9 @@ export default [
         html: WelcomeEmail.html,
         testData: WelcomeEmail.testData
     },
+    {
+        name: 'New template',
+        html: EmptyTemplate.html,
+        testData: EmptyTemplate.testData
+    }
 ]
