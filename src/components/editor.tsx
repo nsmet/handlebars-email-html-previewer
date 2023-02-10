@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import CodeEditor from '@uiw/react-textarea-code-editor';
+import Editor from "@monaco-editor/react";
 
 interface Props {
     code: string;
     onChange: (code: string) => void;
 }
 
-function Editor(props: Props) {
+function MyEditor(props: Props) {
   return (
-      <CodeEditor
+      <Editor
           value={props.code}
           language="handlebars"
-          placeholder="Please enter HTML code."
-          onChange={(evn) => props.onChange(evn.target.value)}
-          padding={15}
-          style={{
-            fontSize: 12,
-            backgroundColor: "#1E293B",
-            fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
-          }}
+          defaultValue="Please enter HTML code."
+          theme="vs-dark"
+          onChange={(newvalue?: string) => props.onChange(newvalue || '')}
       />
   );
 }
 
-export default Editor;
+export default MyEditor;
