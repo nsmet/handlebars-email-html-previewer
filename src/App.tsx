@@ -25,8 +25,8 @@ function App() {
     _setChosenTemplate(Templates.find((item) => item.name === option.label) as any);
   }
 
-  const _onCodeChange = (code: string) => {
-    _setCode(code);
+  const _onCodeChange = (code?: string) => {
+    _setCode(code || '');
   }
 
   return (
