@@ -1,21 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import Dropdown, { Option } from 'react-dropdown';
+import Handlebars from 'handlebars';
 import 'react-dropdown/style.css';
 
 
 interface Props {
     code: string;
+    testData: string;
 }
 function HtmlPreviewer(props: Props) {
     const [_parsedHtml, _setParsedHtml] = useState(props.code);
 
     useEffect(() => {
-        _setParsedHtml(props.code);
-    }, [props.code])
+        try {
+            const handlebarsTemplate = Handlebars.compile(props.code);
+            const parsedHtml = handlebarsTemplate(JSON.parse(props.testData));
+
+            _setParsedHtml(parsedHtml);
+        } catch (e) {
+            
+        }
+    }, [props.code, props.testData])
 
     return (
         <div dangerouslySetInnerHTML={{
-            __html:  _parsedHtml}}>
+            __html:  _parsedHtml
+        }}>
         </div>
     )
 }

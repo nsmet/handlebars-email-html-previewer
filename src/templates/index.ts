@@ -4,5 +4,8 @@ export default [
     {
         name: 'Template 1',
         html: Template1
-    }
+    },{
+        name: 'Template 1',
+        html: Template1
+    },
 ]

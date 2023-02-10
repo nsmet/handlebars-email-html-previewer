@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Dropdown, { Option } from 'react-dropdown';
 import 'react-dropdown/style.css';
 

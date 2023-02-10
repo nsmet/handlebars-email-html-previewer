@@ -11,7 +11,7 @@ function Editor(props: Props) {
       <CodeEditor
           value={props.code}
           language="handlebars"
-          placeholder="Please enter JS code."
+          placeholder="Please enter HTML code."
           onChange={(evn) => props.onChange(evn.target.value)}
           padding={15}
           style={{
