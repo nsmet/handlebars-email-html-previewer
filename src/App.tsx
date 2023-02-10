@@ -39,7 +39,7 @@ function App() {
   }
 
   const _sendtestEmail = (inboxId: string, apiKey: string) => {
-    fetch(`http://localhost:5001/mailtrap`, {
+    fetch(`https://mailtrap-relay.herokuapp.com/mailtrap`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
